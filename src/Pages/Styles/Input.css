@@ -1,0 +1,27 @@
+
+.inputReuse {    
+    position: absolute;
+    width: 597px;
+    height: 58px;
+    border-radius: 10px;
+    border: none;
+    outline-width: 0;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgb a(0, 0, 0, 0.2);
+  }
+
+  .editing-list {
+    transform: translateX(-70px);
+    width: 597px;
+    height: 58px;
+    border-radius: 10px;
+    margin-right: 40px;
+    border: none;
+    outline-width: 0;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }

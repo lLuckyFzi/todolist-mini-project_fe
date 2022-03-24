@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+.form-list {
+    position: relative;
+    width: 597px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+
+.list-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 10px;
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.2  ); */
+  }
+  
+
+  .form-input-edit {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+
+  .list-container form .cancelEdit, .saveEdit {
+    width: 70px;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    margin-right: 20px;
+    border: none;
+    background-color: #0077ff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'poppins';
+    font-weight: 400;
+    transition: 0.2s;
+  }
+
+  .list-container form .cancelEdit:hover, .saveEdit:hover {
+    background-color: white;
+    border: 1px solid #0077ff;
+    color: #0077ff;
+  }
+
+  .list-container form .cancelEdit {
+    margin-right: 100px;
+  }
+  
+  .list-container ul {
+    margin-left: 50px;
+    margin-right: 100px;
+    width: 100%;
+    height: 58px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  
+  .list-container ul p {
+    padding-top: 16px;
+    font-size: 20px;
+    color: black;
+  }
+
+  .date-list p {
+      position: absolute;
+      top: 5px;
+      right: 130px;
+      height: 20px;
+      font-size: 10px;
+      opacity: 0.6;
+  }
+
+  .date-list-check p {
+    position: absolute;
+    top: 5px;
+    right: 60px;
+    height: 20px;
+    font-size: 10px;
+    opacity: 0.6;
+  }
+
+
+.editing-list {
+    position: absolute;
+    right: -110px;
+      font-size: 20px;
+      height: 58px;
+      box-sizing: border-box;
+      padding-left: 70px;
+      top: -29px;
+  }
+  
+  .check-list{
+    position: absolute;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    top: 8px;
+    left: 13px;
+    border-radius: 50%;
+  }
+  
+  .check-list input {
+    width: 40px;
+    height: 40px;
+    appearance: none;
+    background: #c4c8c3;
+    cursor: pointer;
+  }
+  
+  .check-list input:checked{
+    background: #45c825;
+    color: white;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .check-list input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .check-list .checkmark:after {
+    transition: 0.2s;
+    left: 15px;
+    top: 7px;
+    width: 8px;
+    height: 17px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  
+  .del-btn {
+    border: 2px solid #0077ff;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0077ff;
+    text-align: center;
+    font-family: 'Roboto';
+    position: absolute;
+    right: 60px;
+    top: 13px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .del-btn:hover {
+    background-color: rgb(255, 72, 72);
+    border: 2px solid rgb(255, 72, 72);
+    color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2  );
+  }
+
+  .del-btn-check {
+    border: 2px solid #0077ff;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0077ff;
+    text-align: center;
+    font-family: 'Roboto';
+    position: absolute;
+    right: 18px;
+    top: 13px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .del-btn-check:hover {
+    background-color: rgb(255, 72, 72);
+    border: 2px solid rgb(255, 72, 72);
+    color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2  );
+  }
+  
+  .option-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .editing {
+    position: absolute;
+    right: 21px;
+  }
+  
+  .editing button {
+    margin-left: 10px;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #0077ff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .editing button:hover {
+    background-color: white;
+    color: #0077ff;
+    border: 1px solid #0077ff;
+  }
+  
+  .textCheck {
+    text-decoration: 1px line-through;
+  }
+
+  .edit-fallback {
+    position: absolute;
+    left: 71px;
+    top: -10px;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: rgb(216, 119, 119);
+  }
+
+  .saveEdit:disabled,
+  .saveEdit:focus:disabled,
+  .saveEdit:hover:disabled,
+  .saveEdit:active:disabled {
+    background: #ccc;
+    color: #666666;
+    cursor: not-allowed;
+  }

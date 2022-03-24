@@ -1,0 +1,8 @@
+.option-btn span {
+    color: #4bbd28;
+    transition: 0.2s;
+}
+
+.option-btn span:hover {
+    color: #0077ff;
+}

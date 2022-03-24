@@ -1,0 +1,22 @@
+.container-login-form .fallback {
+    color: rgb(252, 188, 188);
+    text-align: start;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 13px;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transform: translateY(-10px);
+  }
+
+  .fallback {
+    color: rgb(88, 6, 6);
+    text-align: start;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 13px;
+    width: 100%;
+    margin-left: 10px;
+    transform: translateY(-10px);
+  }

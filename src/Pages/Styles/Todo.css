@@ -1,0 +1,10 @@
+.ongoing-fallback {
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-family: 'poppins';
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+}

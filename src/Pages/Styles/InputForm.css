@@ -1,0 +1,19 @@
+input {
+    border: none;
+    width: 519px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    outline-width: 0;
+  }
+
+.invalid {
+    border: 2px solid red;
+    background-color: rgba(253, 185, 185, 0.815);
+}
+
+.invalid::placeholder {
+    color: red;
+}
