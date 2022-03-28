@@ -60,10 +60,7 @@ const List = (props) => {
     <div className="form-list">
       <div className="list-container">
         {isEdit ? (
-          <form
-            className="form-input-edit"
-            onSubmit={(e) => e.preventDefault()}
-          >
+          <form className="form-input-edit">
             <Input
               className="editing-list"
               placeholder={startEdit.length === 0 ? "" : "Task"}

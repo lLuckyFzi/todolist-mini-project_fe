@@ -31,6 +31,7 @@ const TodoForm = (props) => {
       isCompleted: false,
     }).then(() => {
       resetField("Todo");
+      resetField("Date");
     });
     setInputDate(false);
   };

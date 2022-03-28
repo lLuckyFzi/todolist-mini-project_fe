@@ -3,6 +3,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import API from "./API/API";
 import "./App.css";
+import NotFoundPages from "./Components/NotFoundPages";
 import Notify from "./Components/Notify";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
@@ -58,6 +59,7 @@ const App = () => {
           path="/todolist"
           element={<TodoList logoutHandler={logoutHandler} />}
         />
+        <Route path="*" element={<NotFoundPages />} />
       </Routes>
     </div>
   );

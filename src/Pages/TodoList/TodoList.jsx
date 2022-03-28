@@ -19,8 +19,6 @@ const TodoList = (props) => {
     try {
       if (!storage) {
         setPages("/");
-      } else if (storage === "undefined") {
-        setPages("/");
       } else {
         const decoding = Jwt(storage);
         onValue(ref(db, `notes/${decoding.ID}`), (snapshot) => {
@@ -46,9 +44,6 @@ const TodoList = (props) => {
         <Navbar logoutHandler={props.logoutHandler} userData={userData} />
       </div>
       <div className="container-todolist">
-        {/* <SecondaryButton className="logout" onClick={props.logoutHandler}>
-              LogOut
-            </SecondaryButton> */}
         <TodoForm greating={props.greating} userData={userData} />
         <Todo userNotes={userNotes} />
       </div>
