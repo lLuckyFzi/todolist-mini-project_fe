@@ -46,9 +46,6 @@ const Navbar = (props) => {
           <div className="profile"></div>
         ) : (
           <>
-            {/* <div className="profile active">
-              <input type="file" className="input-profile" />
-            </div> */}
             <p className="names">
               {userData.firstname + " " + userData.lastname || "Your Name"}
             </p>
