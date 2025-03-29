@@ -9,6 +9,7 @@ const SecondaryButton = (props) => {
       type={props.type}
       disabled={props.disabled}
       onClick={props.onClick}
+      {...props}
     >
       {props.children || "Button"}
     </button>

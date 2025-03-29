@@ -8,6 +8,7 @@
     left: 0;
     top: 0; 
     transition: 0.2s;
+    z-index: 99;
 }
 
 .navbar.active {
@@ -16,7 +17,8 @@
     background-color: rgb(255, 255, 255);
     position: fixed;
     left: 0;
-    top: 0; 
+    top: 0;
+    box-shadow: 10px 0px 15px rgba(8, 8, 8, 0.158);
 }
 
 .main-list {

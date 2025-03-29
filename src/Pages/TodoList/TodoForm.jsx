@@ -20,7 +20,10 @@ const TodoForm = (props) => {
     handleSubmit,
     formState: { errors },
     resetField,
+    watch,
   } = useForm();
+
+  const todoValue = watch("Todo");
 
   const storage = localStorage.getItem("USER_TOKEN");
   const addSubmitHandler = (data) => {
@@ -98,7 +101,15 @@ const TodoForm = (props) => {
             {errors.Todo && errors.Todo.type === "required" && (
               <Fallback>⚠️ Todo cannot be empty!</Fallback>
             )}
-            <AddButton onClick={() => setInputDate(true)} />
+            <AddButton
+              onClick={() => {
+                if (todoValue?.length == 0 || todoValue == "") {
+                  return;
+                } else {
+                  setInputDate(true);
+                }
+              }}
+            />
           </div>
         </form>
       </div>
